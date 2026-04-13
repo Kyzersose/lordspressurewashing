@@ -1,7 +1,7 @@
-# Design System Strategy: Hydro-Precision Industrialism
+# Design System Strategy: Lord's Pressure Washing Industrialism
 
 ## 1. Overview & Creative North Star
-The "Creative North Star" for this design system is **Hydro-Precision Industrialism**. 
+The "Creative North Star" for this design system is **Lord's Pressure Washing Industrialism**. 
 
 This system rejects the "friendly SaaS" aesthetic in favor of a high-performance, technical vibe that mirrors the raw power and surgical precision of industrial pressure washing. We are moving away from the "template" look by utilizing heavy tonal layering, high-contrast typography, and intentional asymmetry. The goal is to make the user feel the force of the water and the clarity of the result.
 
