@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lord's Pressure Washing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-glass" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">⬡</span>
+        <span class="logo-text">Lord's<span class="logo-accent"> Pressure Washing</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn-primary nav-cta">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="spray-orb orb-1"></div>
+    <div class="spray-orb orb-2"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Industrial-Grade Results</p>
+      <h1 class="hero-headline">
+        We Strip<br />
+        <span class="headline-accent">Everything</span><br />
+        Down to Clean.
+      </h1>
+      <p class="hero-body">
+        High-pressure water meets precision technique. Lord's Pressure Washing delivers commercial-grade cleaning for residential and commercial surfaces — driveways, decks, rooftops, and beyond.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary btn-lg">Get a Free Quote</a>
+        <a href="#services" class="btn-tertiary btn-lg">View Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">500<span class="stat-accent">+</span></span>
+          <span class="stat-label">Jobs Completed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100<span class="stat-accent">%</span></span>
+          <span class="stat-label">Satisfaction Rate</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">5<span class="stat-accent">yr</span></span>
+          <span class="stat-label">In Business</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="pressure-gauge-wrap">
+        <svg class="pressure-gauge" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="80" class="gauge-track" />
+          <circle cx="100" cy="100" r="80" class="gauge-fill" id="heroGauge" />
+          <text x="100" y="90" text-anchor="middle" class="gauge-label-main">3200</text>
+          <text x="100" y="115" text-anchor="middle" class="gauge-label-sub">PSI</text>
+        </svg>
+        <p class="gauge-caption">Max Operating Pressure</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="spray-orb orb-3"></div>
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="section-title">Precision Cleaning<br /><span class="headline-accent">For Every Surface</span></h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 36L24 12L40 36H8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M24 12V4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M16 30H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-name">Driveway &amp; Concrete</h3>
+          <p class="service-desc">Blast away oil stains, tire marks, and years of grime from concrete, asphalt, and paver surfaces. We restore driveways to near-original condition.</p>
+          <ul class="service-features">
+            <li>Oil &amp; grease extraction</li>
+            <li>Mold &amp; mildew removal</li>
+            <li>Efflorescence treatment</li>
+          </ul>
+          <a href="#contact" class="btn-secondary service-cta">Request Service</a>
+        </div>
+
+        <div class="service-card service-card--featured">
+          <div class="service-featured-tag">Most Popular</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="14" width="36" height="26" rx="2" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M6 20H42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 8H32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 8V14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-name">House Washing</h3>
+          <p class="service-desc">Full exterior soft-wash and pressure wash services for siding, brick, stucco, and vinyl. Safe on all materials, devastating to dirt and algae.</p>
+          <ul class="service-features">
+            <li>Soft-wash for delicate surfaces</li>
+            <li>Algae &amp; organic stain removal</li>
+            <li>Window track cleaning</li>
+          </ul>
+          <a href="#contact" class="btn-primary service-cta">Request Service</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 42L14 18H34L42 42H6Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M14 18C14 18 16 10 24 8C32 10 34 18 34 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-name">Roof Cleaning</h3>
+          <p class="service-desc">Low-pressure soft-wash roof treatment that kills black streaks, moss, and lichen at the root — not just on the surface. No damage, all results.</p>
+          <ul class="service-features">
+            <li>Shingle-safe soft-wash method</li>
+            <li>Black streak elimination</li>
+            <li>Moss &amp; lichen treatment</li>
+          </ul>
+          <a href="#contact" class="btn-secondary service-cta">Request Service</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="30" width="36" height="4" rx="1" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M10 30V20M16 30V16M22 30V22M28 30V18M34 30V24M38 30V20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-name">Deck &amp; Fence</h3>
+          <p class="service-desc">Restore wood and composite decking, fences, and pergolas. Remove grey oxidation and prep surfaces perfectly for staining or sealing.</p>
+          <ul class="service-features">
+            <li>Wood brightening treatment</li>
+            <li>Oxidation removal</li>
+            <li>Pre-stain surface prep</li>
+          </ul>
+          <a href="#contact" class="btn-secondary service-cta">Request Service</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 40V24L24 10L40 24V40H8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <rect x="18" y="28" width="12" height="12" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="service-name">Commercial Exterior</h3>
+          <p class="service-desc">Storefronts, parking garages, loading docks, and commercial buildings. We work around your schedule to minimize disruption to your business.</p>
+          <ul class="service-features">
+            <li>After-hours scheduling</li>
+            <li>Fleet &amp; equipment washing</li>
+            <li>Graffiti removal</li>
+          </ul>
+          <a href="#contact" class="btn-secondary service-cta">Request Service</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 8V12M24 36V40M8 24H12M36 24H40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="service-name">Patio &amp; Pool Deck</h3>
+          <p class="service-desc">Travertine, pavers, flagstone, and concrete pool decks demand specialist treatment. We eliminate algae, rust stains, and mineral deposits safely.</p>
+          <ul class="service-features">
+            <li>Non-slip surface restoration</li>
+            <li>Rust &amp; mineral stain removal</li>
+            <li>Pool-safe chemicals only</li>
+          </ul>
+          <a href="#contact" class="btn-secondary service-cta">Request Service</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-us" id="why-us">
+    <div class="container why-us-inner">
+      <div class="why-us-text">
+        <p class="section-eyebrow">The Difference</p>
+        <h2 class="section-title">Built on<br /><span class="headline-accent">Precision &amp;<br />Accountability</span></h2>
+        <p class="why-us-body">
+          We're not a franchise. Lord's Pressure Washing is owner-operated, which means every job is treated as our reputation on the line — because it is.
+        </p>
+        <a href="#contact" class="btn-primary">Start Your Project</a>
+      </div>
+      <div class="why-us-pillars">
+        <div class="pillar">
+          <div class="pillar-num">01</div>
+          <div class="pillar-content">
+            <h4>Industrial Equipment</h4>
+            <p>We run commercial-grade hot and cold water pressure washers. The same equipment used by professional restoration crews.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">02</div>
+          <div class="pillar-content">
+            <h4>Surface-First Approach</h4>
+            <p>Every surface gets assessed before we touch it. We match technique and pressure to the material — zero damage, maximum clean.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">03</div>
+          <div class="pillar-content">
+            <h4>Eco-Conscious Chemistry</h4>
+            <p>Our cleaning agents are biodegradable and safe for plants, pets, and surrounding waterways. Clean conscience, clean surfaces.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">04</div>
+          <div class="pillar-content">
+            <h4>Satisfaction Guarantee</h4>
+            <p>If it doesn't meet our standard, we come back at no charge. We don't cut corners — we cut through grime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="spray-orb orb-4"></div>
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">How It Works</p>
+        <h2 class="section-title">Simple Process,<br /><span class="headline-accent">Serious Results</span></h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-connector"></div>
+          <h4 class="step-title">Request a Quote</h4>
+          <p class="step-desc">Fill out our quick form or give us a call. We'll ask a few questions about your property and surfaces.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-connector"></div>
+          <h4 class="step-title">On-Site Assessment</h4>
+          <p class="step-desc">We visit the property, evaluate the surfaces, and give you a clear, itemized quote with no hidden fees.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-connector"></div>
+          <h4 class="step-title">We Get to Work</h4>
+          <p class="step-desc">Our crew arrives on time with full equipment. We secure the area, protect your landscaping, and execute.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-connector last"></div>
+          <h4 class="step-title">Final Walkthrough</h4>
+          <p class="step-desc">We do a full walkthrough with you before we leave. You're happy, or we don't pack up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="spray-orb orb-5"></div>
+    <div class="container contact-inner">
+      <div class="contact-text">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 class="section-title">Ready for<br /><span class="headline-accent">Clean?</span></h2>
+        <p class="contact-body">Get your free, no-obligation quote today. We typically respond within a few hours during business hours.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+15551234567" class="contact-value">(555) 123-4567</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:info@lordspressurewashing.com" class="contact-value">info@lordspressurewashing.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <div>
+              <span class="contact-label">Service Area</span>
+              <span class="contact-value">Serving the Greater Metro Area</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required />
+            </div>
+            <div class="form-field">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+          </div>
+          <div class="form-field">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service…</option>
+              <option>Driveway &amp; Concrete</option>
+              <option>House Washing</option>
+              <option>Roof Cleaning</option>
+              <option>Deck &amp; Fence</option>
+              <option>Commercial Exterior</option>
+              <option>Patio &amp; Pool Deck</option>
+              <option>Other / Multiple Services</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Additional Details</label>
+            <textarea id="message" name="message" placeholder="Tell us about your property and what needs cleaning…" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Send Request</button>
+          <div class="form-success" id="formSuccess">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Message sent! We'll be in touch shortly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-mark">⬡</span>
+          <span class="logo-text">Lord's<span class="logo-accent"> Pressure Washing</span></span>
+        </a>
+        <p class="footer-tagline">Industrial-grade cleaning. Every time.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="#services">Driveway &amp; Concrete</a>
+          <a href="#services">House Washing</a>
+          <a href="#services">Roof Cleaning</a>
+          <a href="#services">Deck &amp; Fence</a>
+          <a href="#services">Commercial</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="#why-us">Why Us</a>
+          <a href="#process">Our Process</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Lord's Pressure Washing. All rights reserved.</p>
+      <p class="footer-credit">Designed &amp; built by <a href="https://cristocreativetech.com" target="_blank" rel="noopener noreferrer" class="footer-credit-name">Cristo Creative Tech</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
