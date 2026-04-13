@@ -24,3 +24,23 @@ const revealObserver = new IntersectionObserver((entries) => {
 });
 
 document.querySelectorAll('.reveal-item').forEach(el => revealObserver.observe(el));
+
+// ── Booking modal ──────────────────────────────
+const bookingModal = document.getElementById('bookingModal');
+
+function openModal() {
+  bookingModal.classList.remove('hidden');
+  document.body.classList.add('modal-open');
+  // Move focus into the modal for accessibility
+  bookingModal.querySelector('button[aria-label="Close"]').focus();
+}
+
+function closeModal() {
+  bookingModal.classList.add('hidden');
+  document.body.classList.remove('modal-open');
+}
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
+});

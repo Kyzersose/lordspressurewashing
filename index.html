@@ -3,324 +3,260 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Lords Pressure Washing | Let's Clean</title>
+  <title>Lord's Pressure Washing | Fresh Look For Your Home</title>
 
-  <!-- Tailwind CDN (config must be inline, before the script) -->
+  <!-- Favicon: water drop matching the header icon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "on-tertiary-container":      "#5e106a",
-            "on-tertiary":                "#691d74",
-            "inverse-surface":            "#faf8ff",
-            "error-container":            "#9f0519",
-            "on-primary-container":       "#003d46",
-            "primary-fixed-dim":          "#1ad0eb",
-            "inverse-on-surface":         "#4f5566",
-            "secondary-container":        "#005ac2",
-            "on-surface":                 "#e0e5fb",
-            "secondary-dim":              "#699cff",
-            "on-surface-variant":         "#a5aabf",
-            "on-error-container":         "#ffa8a3",
-            "outline-variant":            "#424859",
-            "surface-variant":            "#1d253b",
-            "on-primary-fixed-variant":   "#005561",
-            "tertiary-dim":               "#e28ce9",
-            "tertiary-container":         "#f199f7",
-            "on-tertiary-fixed":          "#3e0047",
-            "surface-container-lowest":   "#000000",
-            "primary-fixed":              "#3adffa",
-            "surface-container-high":     "#171f33",
-            "surface-tint":               "#3adffa",
-            "on-secondary":               "#001e4a",
-            "surface":                    "#080e1d",
-            "secondary-fixed-dim":        "#a9c4ff",
-            "surface-container-low":      "#0c1324",
-            "surface-container-highest":  "#1d253b",
-            "on-secondary-container":     "#f7f7ff",
-            "secondary-fixed":            "#bfd1ff",
-            "primary-dim":                "#1ad0eb",
-            "on-error":                   "#490006",
-            "on-primary-fixed":           "#00363e",
-            "on-primary":                 "#004b56",
-            "on-secondary-fixed":         "#003271",
-            "on-background":              "#e0e5fb",
-            "background":                 "#080e1d",
-            "surface-container":          "#12192b",
-            "inverse-primary":            "#006977",
-            "outline":                    "#6f7588",
-            "primary":                    "#3adffa",
-            "secondary":                  "#699cff",
-            "tertiary-fixed-dim":         "#e28ce9",
-            "error":                      "#ff716c",
-            "surface-bright":             "#222c43",
-            "on-secondary-fixed-variant": "#004da8",
-            "primary-container":          "#00cbe6",
-            "on-tertiary-fixed-variant":  "#681c73",
-            "tertiary":                   "#fbabff",
-            "error-dim":                  "#d7383b",
-            "surface-dim":                "#080e1d",
-            "tertiary-fixed":             "#f199f7",
-          },
-          borderRadius: {
-            "DEFAULT": "0.125rem",
-            "lg":      "0.25rem",
-            "xl":      "0.5rem",
-            "full":    "0.75rem",
-          },
-          fontFamily: {
-            "headline": ["Space Grotesk"],
-            "body":     ["Inter"],
-            "label":    ["Inter"],
-          },
-        },
-      },
-    }
-  </script>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@300..800&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
+  <!-- Tailwind theme config -->
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-container":     "#5e106a",
+            "on-tertiary":               "#691d74",
+            "inverse-surface":           "#faf8ff",
+            "error-container":           "#9f0519",
+            "on-primary-container":      "#003d46",
+            "primary-fixed-dim":         "#1ad0eb",
+            "inverse-on-surface":        "#4f5566",
+            "secondary-container":       "#005ac2",
+            "on-surface":                "#e0e5fb",
+            "secondary-dim":             "#699cff",
+            "on-surface-variant":        "#a5aabf",
+            "on-error-container":        "#ffa8a3",
+            "outline-variant":           "#424859",
+            "surface-variant":           "#1d253b",
+            "on-primary-fixed-variant":  "#005561",
+            "tertiary-dim":              "#e28ce9",
+            "tertiary-container":        "#f199f7",
+            "on-tertiary-fixed":         "#3e0047",
+            "surface-container-lowest":  "#000000",
+            "primary-fixed":             "#3adffa",
+            "surface-container-high":    "#171f33",
+            "surface-tint":              "#3adffa",
+            "on-secondary":              "#001e4a",
+            "surface":                   "#080e1d",
+            "secondary-fixed-dim":       "#a9c4ff",
+            "surface-container-low":     "#0c1324",
+            "surface-container-highest": "#1d253b",
+            "on-secondary-container":    "#f7f7ff",
+            "secondary-fixed":           "#bfd1ff",
+            "primary-dim":               "#1ad0eb",
+            "on-error":                  "#490006",
+            "on-primary-fixed":          "#00363e",
+            "on-primary":                "#004b56",
+            "on-secondary-fixed":        "#003271",
+            "on-background":             "#e0e5fb",
+            "background":                "#080e1d",
+            "surface-container":         "#12192b",
+            "inverse-primary":           "#006977",
+            "outline":                   "#6f7588",
+            "primary":                   "#3adffa",
+            "secondary":                 "#699cff",
+            "tertiary-fixed-dim":        "#e28ce9",
+            "error":                     "#ff716c",
+            "surface-bright":            "#222c43",
+            "on-secondary-fixed-variant":"#004da8",
+            "primary-container":         "#00cbe6",
+            "on-tertiary-fixed-variant": "#681c73",
+            "tertiary":                  "#fbabff",
+            "error-dim":                 "#d7383b",
+            "surface-dim":               "#080e1d",
+            "tertiary-fixed":            "#f199f7"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg":      "0.25rem",
+            "xl":      "0.5rem",
+            "full":    "0.75rem"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body":     ["Inter"],
+            "label":    ["Inter"]
+          }
+        },
+      },
+    }
+  </script>
+
   <!-- Custom styles -->
   <link rel="stylesheet" href="styles.css"/>
 </head>
-
 <body class="bg-background text-on-surface font-body selection:bg-primary/30">
 
-  <!-- Nav -->
-  <header class="fixed top-0 w-full z-50 bg-[#080E1D]/60 backdrop-blur-xl border-b border-white/[0.04]" id="navbar">
-    <nav class="flex justify-between items-center px-4 sm:px-6 h-16 max-w-7xl mx-auto">
-
-      <!-- Brand -->
-      <div class="flex items-center gap-2 min-w-0">
-        <span class="material-symbols-outlined text-[#3ADFFA] flex-shrink-0" style="font-size:20px">water_drop</span>
-        <!-- Full name on sm+, abbreviated on xs -->
-        <span class="hidden sm:block text-base font-black tracking-tighter text-[#3ADFFA] uppercase font-headline whitespace-nowrap">
-          LORD'S PRESSURE WASHING
-        </span>
-        <span class="sm:hidden text-base font-black tracking-tighter text-[#3ADFFA] uppercase font-headline">
-          LORD'S PW
-        </span>
+  <!-- ── Top Navigation ── -->
+  <header id="navbar" class="glass-header fixed top-0 w-full z-50">
+    <nav class="flex justify-between items-center px-6 py-4 max-w-full mx-auto">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-[#3ADFFA]" aria-hidden="true">water_drop</span>
+        <span class="text-xl font-black tracking-tighter text-[#3ADFFA] uppercase font-headline">LORD'S PRESSURE WASHING</span>
       </div>
-
-      <!-- Call CTA — always visible, minimum 44×44 touch target -->
-      <a class="flex items-center gap-2 text-[#3ADFFA] font-headline font-bold text-sm tracking-tight
-                 min-h-[44px] min-w-[44px] px-3 rounded-md
-                 hover:bg-primary/10 active:scale-95 transition-all duration-200"
-         href="tel:3344278402">
-        <span class="material-symbols-outlined flex-shrink-0" style="font-size:20px">call</span>
-        <span class="hidden xs:inline sm:inline">CALL NOW</span>
+      <a class="flex items-center gap-2 text-[#3ADFFA] transition-colors duration-300 font-headline font-bold text-sm tracking-tight hover:brightness-125 active:scale-90 min-h-[44px] px-2"
+         href="tel:3344278402"
+         aria-label="Text or call 334-427-8402">
+        <span class="material-symbols-outlined text-lg" aria-hidden="true">call</span>
+        <span class="hidden sm:inline">TEXT OR CALL</span>
       </a>
     </nav>
   </header>
 
   <main class="relative">
 
-    <!-- ── Hero ──────────────────────────────── -->
-    <section class="relative min-h-[100svh] flex flex-col justify-center items-center
-                    px-5 sm:px-8 pt-24 pb-24 overflow-hidden reveal-section">
-
-      <!-- Spray orbs -->
-      <div class="absolute top-1/4 -left-20 w-80 h-80 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
-      <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <!-- ── Hero Section ── -->
+    <section class="hero-min-h relative flex flex-col justify-center items-center px-6 pt-20 overflow-hidden">
+      <!-- Background gradient blobs -->
+      <div class="absolute top-1/4 -left-20 w-80 h-80 bg-primary/10 rounded-full blur-[100px]" aria-hidden="true"></div>
+      <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary/10 rounded-full blur-[120px]" aria-hidden="true"></div>
 
       <div class="relative z-10 w-full max-w-4xl flex flex-col items-center text-center">
-
-        <!-- Badge -->
-        <div class="reveal-item mb-5 inline-flex items-center gap-2 px-3 py-1.5
-                    rounded-full bg-surface-container-highest border border-primary/20
-                    text-xs font-bold tracking-widest text-primary uppercase">
-          <span class="w-2 h-2 rounded-full bg-primary animate-pulse flex-shrink-0"></span>
-          Now Serving Local Areas
+        <div class="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest border border-primary/20 text-xs font-bold tracking-widest text-primary uppercase reveal-item">
+          <span class="w-2 h-2 rounded-full bg-primary animate-pulse" aria-hidden="true"></span>
+          Getting Your Curb Appeal Back
         </div>
 
-        <!-- Headline — fluid type scale -->
-        <h1 class="reveal-item font-headline font-black tracking-tighter leading-[0.92] text-on-surface mb-6
-                   text-[clamp(3rem,12vw,6.5rem)]">
-          UNLEASH THE <span class="text-primary italic">CLEAN</span>
+        <h1 class="text-5xl sm:text-6xl md:text-8xl font-headline font-black tracking-tighter leading-[0.9] text-on-surface mb-8 uppercase reveal-item">
+          Unleash the <span class="text-primary italic">Clean</span>
         </h1>
 
-        <!-- Sub -->
-        <p class="reveal-item text-base sm:text-lg md:text-xl text-on-surface-variant
-                  max-w-sm sm:max-w-xl mb-8 sm:mb-10 font-light leading-relaxed">
-          Surgical precision pressure washing for commercial and residential properties.
-          We don't just wash; we restore.
+        <p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 font-light leading-relaxed reveal-item">
+          High-energy pressure washing for your home and driveway. We don't just blast dirt; we bring the shine back!
         </p>
 
-        <!-- CTAs — full-width stacked on mobile, side-by-side on sm+ -->
-        <div class="reveal-item flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
-          <a href="tel:3344278402"
-             class="flex items-center justify-center gap-2
-                    bg-gradient-to-br from-primary to-primary-container text-on-primary
-                    font-bold py-4 px-8 rounded-md text-base sm:text-lg tracking-tight
-                    hover:brightness-110 active:scale-95 transition-all primary-glow
-                    min-h-[52px]">
-            <span class="material-symbols-outlined flex-shrink-0" style="font-size:18px">call</span>
-            CALL TO BOOK
-          </a>
-          <button class="flex items-center justify-center
-                         bg-surface-container-highest/50 border border-primary/15 text-primary
-                         font-bold py-4 px-8 rounded-md text-base sm:text-lg tracking-tight
-                         hover:bg-surface-container-highest transition-all
-                         min-h-[52px]">
-            OUR PROJECTS
+        <div class="w-full sm:w-auto reveal-item">
+          <button
+            onclick="openModal()"
+            class="w-full sm:w-auto bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold py-5 px-10 rounded-md text-lg tracking-tight hover:brightness-110 active:scale-95 transition-all primary-glow min-h-[52px]">
+            BOOK MY CLEANING
           </button>
         </div>
       </div>
 
       <!-- Scroll indicator -->
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40 pointer-events-none">
-        <span class="text-[9px] uppercase tracking-[0.3em] font-bold">Scroll</span>
-        <div class="w-px h-10 bg-gradient-to-b from-primary to-transparent"></div>
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50" aria-hidden="true">
+        <span class="text-[10px] uppercase tracking-[0.3em] font-bold">See More</span>
+        <div class="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
       </div>
 
-      <!-- Hero BG image -->
-      <div class="absolute inset-0 -z-10 opacity-25">
-        <img class="w-full h-full object-cover" loading="eager"
-             alt="High-pressure water stream on concrete"
-             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjxRB_Vza93RSenaMfyu7wP5dSntd9qSUwfDOXdAEErX1Dmn9kQHyMze9yu_iEsxQHeXbjWQBpT4Ha8vmBm6jZdncN1E-QsSgHWT66owW1eEc6NRcd4VcxFRjE2ovJqvUfGkAXOx8eG7GzSJW6BfszIc_g440iBhfzLQBpoFxbOlr_m4GWlxIhvM--cROb1gGreadRkE0O9ycmoVVgP_1uKp7J0h9eg1N2noqu5cc7BV50Es_taAMj91tyxHaqeQvxZCMZJNf6DwpX"/>
-        <div class="absolute inset-0 bg-gradient-to-t from-background via-background/75 to-transparent"></div>
+      <!-- Background image -->
+      <div class="absolute inset-0 -z-10 opacity-30" aria-hidden="true">
+        <img
+          class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_uz2Xnm9akr7goiOnqJmckr9gcSCnXSISf0OZIIPCnIVigyMEob0-zGmdyguz7x8Ya7Z_pPKTccXM0hFiBWKJb4bP_QtBZyMFaMZgS-1YOrAZG2Lor8tW7g85yLDh1_YkyeH0KLmAYekprL4X-mbvW8e6GWRe9Ikx-Hf0hpMP-IUnJaqW33QzigXOceDsdTJBlseNbxJPTYFjIRA7XsxDqlNyUxkbIkHGv4fG99QwU645BHwUhO4_TEjZ1D3CYNgV4EtESj_rimp7"
+          alt=""
+          loading="eager"
+          decoding="async"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
       </div>
     </section>
 
-    <!-- ── Services ───────────────────────────── -->
-    <section class="py-16 sm:py-24 px-5 sm:px-8 relative bg-surface-container-low reveal-section">
+    <!-- ── Services Section ── -->
+    <section class="py-24 px-6 relative bg-surface-container-low">
       <div class="max-w-6xl mx-auto">
-
-        <div class="mb-10 sm:mb-16 reveal-item">
-          <h2 class="text-3xl sm:text-4xl font-headline font-extrabold tracking-tighter mb-2">PRECISION SERVICES</h2>
-          <div class="w-16 sm:w-20 h-1 bg-primary"></div>
+        <div class="mb-16 reveal-item">
+          <h2 class="text-4xl font-headline font-extrabold tracking-tighter mb-2">OUR SERIVCES</h2>
+          <div class="w-20 h-1 bg-primary"></div>
         </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-section">
 
           <!-- Sidewalks -->
-          <div class="reveal-item group relative p-6 sm:p-8 bg-surface-container-highest rounded-xl
-                      border-l-2 border-primary/20 hover:border-primary transition-all duration-300
-                      hover:-translate-y-1">
-            <div class="mb-5 text-primary">
-              <span class="material-symbols-outlined" style="font-size:36px">grid_view</span>
+          <div class="reveal-item p-8 bg-surface-container-highest rounded-xl border-l-2 border-primary/20 hover:border-primary transition-all duration-300">
+            <div class="mb-6 text-primary">
+              <span class="material-symbols-outlined text-4xl" aria-hidden="true">grid_view</span>
             </div>
-            <h3 class="text-xl sm:text-2xl font-headline font-bold mb-3">Sidewalks</h3>
-            <p class="text-on-surface-variant font-light mb-6 text-sm sm:text-base leading-relaxed">
-              Removal of deep-set gum, oil, and organic growth to ensure curb appeal and safety.
-            </p>
-            <div class="flex items-center gap-2 text-primary text-sm font-bold tracking-widest uppercase min-h-[44px]">
-              View Details
-              <span class="material-symbols-outlined" style="font-size:14px">arrow_forward</span>
-            </div>
+            <h3 class="text-2xl font-headline font-bold mb-4">Sidewalks</h3>
+            <p class="text-on-surface-variant font-light">Blasting away grime and stains to make your walkways look brand new again.</p>
           </div>
 
           <!-- Driveways -->
-          <div class="reveal-item group relative p-6 sm:p-8 bg-surface-container-highest rounded-xl
-                      border-l-2 border-primary/20 hover:border-primary transition-all duration-300
-                      hover:-translate-y-1">
-            <div class="mb-5 text-primary">
-              <span class="material-symbols-outlined" style="font-size:36px">directions_car</span>
+          <div class="reveal-item p-8 bg-surface-container-highest rounded-xl border-l-2 border-primary/20 hover:border-primary transition-all duration-300">
+            <div class="mb-6 text-primary">
+              <span class="material-symbols-outlined text-4xl" aria-hidden="true">directions_car</span>
             </div>
-            <h3 class="text-xl sm:text-2xl font-headline font-bold mb-3">Driveways</h3>
-            <p class="text-on-surface-variant font-light mb-6 text-sm sm:text-base leading-relaxed">
-              Industrial grade surface cleaners restore concrete to its original bright white finish.
-            </p>
-            <div class="flex items-center gap-2 text-primary text-sm font-bold tracking-widest uppercase min-h-[44px]">
-              View Details
-              <span class="material-symbols-outlined" style="font-size:14px">arrow_forward</span>
-            </div>
+            <h3 class="text-2xl font-headline font-bold mb-4">Driveways</h3>
+            <p class="text-on-surface-variant font-light">Turning dingy concrete into a bright white surface that makes the whole house pop.</p>
           </div>
 
-          <!-- Patios — spans full width on 2-col, normal on 3-col -->
-          <div class="reveal-item group relative p-6 sm:p-8 bg-surface-container-highest rounded-xl
-                      border-l-2 border-primary/20 hover:border-primary transition-all duration-300
-                      hover:-translate-y-1 sm:col-span-2 lg:col-span-1">
-            <div class="mb-5 text-primary">
-              <span class="material-symbols-outlined" style="font-size:36px">deck</span>
+          <!-- Patios -->
+          <div class="reveal-item p-8 bg-surface-container-highest rounded-xl border-l-2 border-primary/20 hover:border-primary transition-all duration-300">
+            <div class="mb-6 text-primary">
+              <span class="material-symbols-outlined text-4xl" aria-hidden="true">deck</span>
             </div>
-            <h3 class="text-xl sm:text-2xl font-headline font-bold mb-3">Patios</h3>
-            <p class="text-on-surface-variant font-light mb-6 text-sm sm:text-base leading-relaxed">
-              Delicate soft-wash techniques for natural stone and pavers to prevent damage.
-            </p>
-            <div class="flex items-center gap-2 text-primary text-sm font-bold tracking-widest uppercase min-h-[44px]">
-              View Details
-              <span class="material-symbols-outlined" style="font-size:14px">arrow_forward</span>
-            </div>
+            <h3 class="text-2xl font-headline font-bold mb-4">Patios</h3>
+            <p class="text-on-surface-variant font-light">Safe and effective cleaning for your hangout spots so they're ready for the weekend.</p>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- ── Why Choose Us ─────────────────────── -->
-    <section class="py-16 sm:py-24 px-5 sm:px-8 bg-background reveal-section">
-      <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 lg:gap-16 items-center">
+    <!-- ── Why Choose Us ── -->
+    <section class="py-24 px-6 bg-background">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
 
-        <!-- Image side — extra bottom padding on mobile to clear floating card -->
-        <div class="w-full md:w-1/2 relative pb-10 md:pb-0">
-          <div class="aspect-square bg-surface-container-high rounded-xl overflow-hidden reveal-item">
-            <img class="w-full h-full object-cover grayscale brightness-50" loading="lazy"
-                 alt="Industrial pressure washing equipment"
-                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxvHiVWTThoJlo4Oq8Pcx2yisEAPCMqnmjVdexK7NC-2aoxBSd5JtOx3Rz8sK00yjkVcZoYEcruv1qKl8QaYdXZPY40AyjhUzBtGRgkO_0GI6LBjocsknI51UEJXdrxl8OkAPxozYstMviGV175mOtHk-8WfzWDtAxjDA_kxMv_YvCH9XhLhoHgd-1dJ62zG95sjQ6H3dyc0yogVTaHJJY_j_gls-kplr-7iv-wjvUFuSYX3cUccumlYaYMpXYQ6PVS54TrtX3y2TS"/>
-            <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+        <!-- Image column — extra bottom padding on mobile to clear the floating card -->
+        <div class="w-full md:w-1/2 relative pb-10 md:pb-0 reveal-item">
+          <div class="aspect-square bg-surface-container-high rounded-xl overflow-hidden">
+            <img
+              class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAxOqrYhdIcuqmlhSf-DVRuqjXeGmbLU6wolEEYjjcxfdMRhf6SMt-iXpvsn26Q0fbByYTJoM4iRRGdV633SrWNcoJdIFrkpbWk81u1wGsUo_3RdITKk2blltcQnCZk1ClX_ohFMjvfZ5o9Heu4IMBVEyhBHe7EQX3E3u3YRMOdAaF6fSVjKfDUBFZNUrTHPXBDFK1U4KVFCz-eQMLa7erl3Pi4Lxmf-E5sRB0FN_cCHsrCcdVm9QvZrM0K3xlsx-7VjVK8Z9svTD7"
+              alt="Pressure washing residential siding"
+              loading="lazy"
+              decoding="async"/>
           </div>
-          <!-- Floating stat card — anchored so it doesn't clip -->
-          <div class="reveal-item absolute -bottom-2 right-0 sm:-bottom-6 sm:-right-4 md:-right-2
-                      p-4 sm:p-6 bg-surface-container-highest border border-outline-variant/30
-                      rounded-lg shadow-2xl z-10">
-            <div class="text-primary font-black text-3xl sm:text-4xl font-headline">100%</div>
-            <div class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant mt-0.5">Satisfaction Rate</div>
+          <!-- Floating stat card — inside bounds on mobile, offset on md+ -->
+          <div class="absolute bottom-0 right-0 md:-bottom-6 md:-right-6 p-6 bg-surface-container-highest border border-outline-variant/30 rounded-lg shadow-2xl">
+            <div class="text-primary font-black text-4xl font-headline">100%</div>
+            <div class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">Happy Neighbors</div>
           </div>
         </div>
 
-        <!-- Text side -->
-        <div class="w-full md:w-1/2">
-          <h2 class="reveal-item text-3xl sm:text-4xl md:text-5xl font-headline font-black
-                     tracking-tighter mb-6 sm:mb-8 leading-none">
-            THE INDUSTRIAL<br/>DIFFERENCE.
+        <!-- Text column -->
+        <div class="w-full md:w-1/2 reveal-item">
+          <h2 class="text-4xl md:text-5xl font-headline font-black tracking-tighter mb-8 leading-none uppercase">
+            A FRESH LOOK<br/>FOR YOUR HOME.
           </h2>
-          <p class="reveal-item text-on-surface-variant mb-8 sm:mb-10 leading-relaxed text-sm sm:text-base">
-            We utilize professional-grade 4000 PSI machines and eco-friendly detergents to tackle
-            the most stubborn stains that consumer washers can't touch.
+          <p class="text-on-surface-variant mb-10 leading-relaxed">
+            I'm your local neighborhood expert using the best gear to tackle the stubborn stains that standard garden hoses can't even touch!
           </p>
-          <div class="space-y-5 sm:space-y-6">
-
-            <div class="reveal-item flex items-start gap-4">
-              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-lg bg-primary/10
-                          flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined text-primary" style="font-size:22px">verified_user</span>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-primary" aria-hidden="true">bolt</span>
               </div>
               <div>
-                <h4 class="text-base sm:text-lg font-bold mb-0.5">Fully Insured</h4>
-                <p class="text-sm text-on-surface-variant leading-relaxed">
-                  General liability coverage for your peace of mind on every job site.
-                </p>
+                <h4 class="text-lg font-bold">Fast Results</h4>
+                <p class="text-sm text-on-surface-variant">I show up on time and work hard to make your place shine in record time.</p>
               </div>
             </div>
-
-            <div class="reveal-item flex items-start gap-4">
-              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-lg bg-primary/10
-                          flex items-center justify-center shrink-0">
-                <span class="material-symbols-outlined text-primary" style="font-size:22px">home_pin</span>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-primary" aria-hidden="true">home_pin</span>
               </div>
               <div>
-                <h4 class="text-base sm:text-lg font-bold mb-0.5">Local Expertise</h4>
-                <p class="text-sm text-on-surface-variant leading-relaxed">
-                  Owned and operated right here. We know the local grime and how to beat it.
-                </p>
+                <h4 class="text-lg font-bold">Local Startup</h4>
+                <p class="text-sm text-on-surface-variant">I live right here! Supporting me helps a local student and your community.</p>
               </div>
             </div>
-
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- ── CTA / Booking ──────────────────────── -->
-    <section class="relative py-16 sm:py-24 px-5 sm:px-8 overflow-hidden bg-surface-container-low reveal-section">
-      <!-- Grid bg decoration -->
-      <div class="absolute inset-0 opacity-5 pointer-events-none" aria-hidden="true">
+    <!-- ── Booking CTA Section ── -->
+    <section class="relative py-24 px-6 overflow-hidden bg-surface-container-low">
+      <div class="absolute inset-0 opacity-5" aria-hidden="true">
         <div class="grid grid-cols-6 h-full w-full">
           <div class="border-r border-primary"></div>
           <div class="border-r border-primary"></div>
@@ -329,84 +265,115 @@
           <div class="border-r border-primary"></div>
         </div>
       </div>
-
       <div class="max-w-4xl mx-auto text-center relative z-10">
-        <h2 class="reveal-item text-xl sm:text-2xl md:text-3xl font-headline font-bold tracking-tight mb-4 text-primary">
-          READY TO RESTORE?
-        </h2>
-
-        <!-- Phone — fluid size, never overflows -->
-        <div class="reveal-item font-black font-headline tracking-tighter text-[#3ADFFA] text-glow mb-10 sm:mb-12
-                    text-[clamp(2.25rem,10vw,5rem)]">
+        <h2 class="text-2xl md:text-3xl font-headline font-bold tracking-tight mb-4 text-primary uppercase reveal-item">READY TO REFRESH?</h2>
+        <div class="text-5xl md:text-7xl font-black font-headline tracking-tighter text-[#3ADFFA] text-glow mb-12 reveal-item">
           334-427-8402
         </div>
-
-        <p class="reveal-item text-on-surface-variant mb-10 sm:mb-12 max-w-lg mx-auto italic text-sm sm:text-base">
-          "Fast estimates. Precision work. Guaranteed results. That is the Lord's Pressure Washing promise."
+        <p class="text-on-surface-variant mb-12 max-w-lg mx-auto italic reveal-item">
+          "Quick estimates. Hard work. Great results. That's the Lord's Pressure Washing promise."
         </p>
-
-        <a class="reveal-item inline-flex items-center justify-center gap-3
-                  bg-primary text-on-primary rounded-md font-black tracking-tighter primary-glow
-                  hover:scale-105 active:scale-95 transition-all
-                  text-lg sm:text-xl px-8 sm:px-12 py-4 sm:py-5 min-h-[56px] w-full sm:w-auto"
-           href="tel:3344278402">
-          BOOK SERVICE NOW
-          <span class="material-symbols-outlined flex-shrink-0" style="font-size:22px">bolt</span>
-        </a>
+        <div class="reveal-item">
+          <button
+            onclick="openModal()"
+            class="inline-flex items-center justify-center gap-3 bg-primary text-on-primary px-12 py-5 rounded-md font-black text-xl tracking-tighter primary-glow hover:scale-105 active:scale-95 transition-all min-h-[52px]">
+            GET A QUOTE NOW
+            <span class="material-symbols-outlined" aria-hidden="true">bolt</span>
+          </button>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ── Footer ─────────────────────────────── -->
+  <!-- ── Booking Modal ── -->
+  <div
+    id="bookingModal"
+    class="hidden fixed inset-0 z-[100] flex items-center justify-center px-4"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalTitle">
+
+    <!-- Backdrop -->
+    <div
+      onclick="closeModal()"
+      class="modal-backdrop absolute inset-0 bg-black/70"
+      aria-hidden="true"></div>
+
+    <!-- Card -->
+    <div class="relative z-10 w-full max-w-sm bg-surface-container-highest border border-primary/30 rounded-xl p-10 shadow-2xl primary-glow text-center">
+      <button
+        onclick="closeModal()"
+        class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+        aria-label="Close">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
+
+      <div class="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-xs font-bold tracking-widest text-primary uppercase">
+        <span class="w-2 h-2 rounded-full bg-primary animate-pulse" aria-hidden="true"></span>
+        Ready to Book?
+      </div>
+
+      <h3 id="modalTitle" class="text-2xl font-headline font-black tracking-tighter text-on-surface mb-2 uppercase">
+        Give Me a Text or Call
+      </h3>
+      <p class="text-on-surface-variant text-sm mb-8 leading-relaxed">
+        I'll respond within one business day to get your estimate scheduled.
+      </p>
+
+      <a href="tel:3344278402" class="block text-4xl font-headline font-black text-primary text-glow tracking-tighter mb-8 hover:brightness-125 transition-all">
+        334-427-8402
+      </a>
+
+      <a
+        href="tel:3344278402"
+        class="inline-flex items-center gap-2 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold py-4 px-8 rounded-md text-base tracking-tight hover:brightness-110 active:scale-95 transition-all primary-glow min-h-[48px]">
+        <span class="material-symbols-outlined text-lg" aria-hidden="true">call</span>
+        CALL NOW
+      </a>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
   <footer class="bg-[#080E1D] w-full border-t border-[#3ADFFA]/10">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-10 sm:py-12
-                flex flex-col sm:flex-row justify-between items-center gap-8">
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-8 w-full">
 
       <!-- Brand -->
-      <div class="flex flex-col items-center sm:items-start gap-1.5">
-        <div class="text-base sm:text-lg font-bold text-[#3ADFFA] font-headline">Lord's Pressure Washing</div>
-        <div class="text-xs sm:text-sm tracking-wide text-[#E0E5FB]/40">
-          © 2026 Lord's Pressure Washing. ALL RIGHTS RESERVED.
+      <div class="flex flex-col items-center md:items-start gap-2">
+        <div class="text-lg font-bold text-[#3ADFFA] font-headline">LORD'S PRESSURE WASHING</div>
+        <div class="text-sm tracking-wide text-[#E0E5FB]/50 font-body">© 2026 LORD'S PRESSURE WASHING. ALL RIGHTS RESERVED.</div>
+      </div>
+
+      <!-- Venmo -->
+      <a href="https://venmo.com/u/NoahL427"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="group flex items-center gap-3 px-5 py-3 rounded-lg border border-[#3ADFFA]/20 hover:border-[#3ADFFA]/50 bg-[#3ADFFA]/5 hover:bg-[#3ADFFA]/10 transition-all duration-300 min-h-[44px]">
+        <svg class="w-5 h-5 text-[#3ADFFA] opacity-80 group-hover:opacity-100 transition-opacity shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M19.5 2c.6 1 .9 2.1.9 3.4 0 4.2-3.6 9.7-6.5 13.6H7.8L5 2.9l5.5-.5 1.4 11.3C13.6 11.1 15 8 15 5.8c0-1.4-.2-2.4-.6-3.3L19.5 2z"/>
+        </svg>
+        <div class="flex flex-col">
+          <span class="text-[10px] font-bold tracking-widest uppercase text-[#E0E5FB]/40 leading-none mb-0.5">Pay via Venmo</span>
+          <span class="text-sm font-headline font-bold text-[#3ADFFA]/80 group-hover:text-[#3ADFFA] transition-colors tracking-tight">@NoahL427</span>
         </div>
-      </div>
-
-      <!-- Nav links — wrap on narrow screens -->
-      <div class="flex flex-wrap justify-center gap-x-6 gap-y-3">
-        <a class="text-[#E0E5FB]/50 text-sm tracking-wide hover:text-[#3ADFFA]
-                  underline-offset-4 hover:underline transition-colors min-h-[44px] flex items-center"
-           href="#">Services</a>
-        <a class="text-[#E0E5FB]/50 text-sm tracking-wide hover:text-[#3ADFFA]
-                  underline-offset-4 hover:underline transition-colors min-h-[44px] flex items-center"
-           href="#">Safety</a>
-        <a class="text-[#E0E5FB]/50 text-sm tracking-wide hover:text-[#3ADFFA]
-                  underline-offset-4 hover:underline transition-colors min-h-[44px] flex items-center"
-           href="#">Contact</a>
-        <a class="text-[#E0E5FB]/50 text-sm tracking-wide hover:text-[#3ADFFA]
-                  underline-offset-4 hover:underline transition-colors min-h-[44px] flex items-center"
-           href="#">Privacy</a>
-      </div>
-
-      <!-- Share -->
-      <div class="flex gap-4">
-        <button class="w-11 h-11 rounded-full border border-primary/20
-                       flex items-center justify-center text-primary
-                       hover:bg-primary/10 transition-colors"
-                aria-label="Share">
-          <span class="material-symbols-outlined" style="font-size:20px">share</span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Credit -->
-    <div class="text-center pb-5 site-credit">
-      Designed &amp; built by
-      <a href="https://cristocreativetech.com" target="_blank" rel="noopener noreferrer">
-        Cristo Creative Tech
       </a>
+
+      <!-- Site credit -->
+      <div class="flex flex-col items-center gap-1">
+        <div class="text-[#E0E5FB]/30 text-[10px] tracking-widest uppercase font-body">Site by</div>
+        <a href="https://cristocreativetech.com"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="text-[#3ADFFA]/70 font-headline font-bold text-sm tracking-tight hover:text-[#3ADFFA] transition-colors uppercase min-h-[44px] flex items-center">
+          Cristo Creative Tech
+        </a>
+      </div>
+
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <!-- Scripts -->
+  <script src="main.js" defer></script>
+
 </body>
 </html>
